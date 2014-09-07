@@ -14,7 +14,7 @@
         "phpunit/phpunit": "~4.2"
     },
     "support": {
-        "issues": "https://github.com/ppetermann/xmlrpc-common/issues"
+        "issues": "https://github.com/ppetermann/devedge-xmlrpc-common/issues"
     },
     "autoload": {
         "psr-4": { "Devedge\\": "src/Devedge/"}
