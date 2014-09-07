@@ -1,0 +1,22 @@
+{
+    "name": "devedge/xmlrpc-common",
+    "description": "lib to be used by devedge/xmlrpc-server and devedge/xmlrpc-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Petermann",
+            "email": "ppetermann80@googlemail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.2"
+    },
+    "support": {
+        "issues": "https://github.com/ppetermann/xmlrpc-common/issues"
+    },
+    "autoload": {
+        "psr-4": { "Devedge\\": "src/Devedge/"}
+    }
+}
