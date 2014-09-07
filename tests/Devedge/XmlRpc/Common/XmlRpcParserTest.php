@@ -83,4 +83,11 @@ class XmlRpcParserTest extends PHPUnit_Framework_TestCase
         $this->assertTrue(is_int(XmlRpcParser::parseElement($element)));
         $this->assertFalse(is_string(XmlRpcParser::parseElement($element)));
     }
+
+    public function testParseParams()
+    {
+        $element = simplexml_load_string("<?xml version=\"1.0\"?>\n<params><param><value><string>foo</string></value></param><param><value><int>1</int></value></param></params>\n");
+        $this->assertTrue(is_array(XmlRpcParser::parseParams($element)));
+        $this->assertEquals(["foo", 1], XmlRpcParser::parseParams($element));
+    }
 }

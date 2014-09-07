@@ -97,4 +97,26 @@ class XmlRpcParser
 
         return $list;
     }
+
+    /**
+     * @param \SimpleXMLElement $params
+     * @return array
+     */
+    public static function parseParams(\SimpleXMLElement $params)
+    {
+        $return = [];
+        foreach($params->children() as $param)
+        {
+
+            if ($param->value->count() == 0) {
+                $return[] = (string) $param->value;
+            }
+
+            foreach($param->value->children() as $child)
+            {
+                $return[] = XmlRpcParser::parseElement($child);
+            }
+        }
+        return $return;
+    }
 }
