@@ -8,8 +8,6 @@
             "email": "ppetermann80@googlemail.com"
         }
     ],
-    "require": {
-    },
     "require-dev": {
         "phpunit/phpunit": "~4.2"
     },
