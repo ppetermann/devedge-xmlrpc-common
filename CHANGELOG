@@ -2,5 +2,10 @@
 VERSION 0  INITIAL RELEASE
 ==========================
 
+   Version 0.2 - parse params
+      08/09/2014 00:00  0.2.0  initial release
+         8bb7317 added a parse for params
+         344f2c8 fixed issues link
+
    Version 0.1 - initial release
       07/09/2014 23:07  0.1.0  initial release
