@@ -2,7 +2,7 @@
 A library to provide functionality used by both devedge/xmlrpc-server and devedge/xmlrpc-client
 
 ## License
-MIT Style
+MIT Style, see LICENSE.txt
 
 ## Notes
 this is not meant to be used alone..
