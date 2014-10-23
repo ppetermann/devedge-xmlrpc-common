@@ -33,8 +33,6 @@ class XmlRpcBuilder
             case is_object($value) && $value instanceof \DateTime:
                 return static::createDateTimeIso8601($value);
             case is_null($value):
-                // @todo check if extension is enabled, we might want to behave differently
-                // if it isn't
                 return static::createNil();
                 break;
             default:
