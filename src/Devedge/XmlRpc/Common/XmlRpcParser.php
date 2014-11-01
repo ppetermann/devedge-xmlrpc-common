@@ -50,8 +50,9 @@ class XmlRpcParser
         $struct = [];
         /** @var \SimpleXmlElement $member */
         foreach ($element->children() as $member) {
+
             // the special string-has-possibly-no-element-around-it-case
-            if ($member->value->count() == 0) {
+            if ($member->value->children()->count() == 0) {
                 $struct[(string)$member->name] = (string)$member->value;
                 continue;
             }
@@ -63,7 +64,6 @@ class XmlRpcParser
             foreach($member->value->children() as $child) {
                 $struct[(string)$member->name] = self::parseElement($child);
             }
-
         }
 
         return $struct;
@@ -84,7 +84,7 @@ class XmlRpcParser
         foreach ($data->children() as $value) {
 
             // if there is no child, we treat this as a string (xml-rpc strings don't need to be marked)
-            if ($value->count() == 0) {
+            if ($value->children()->count() == 0) {
                 $list[] = (string)$value;
                 continue;
             }
@@ -108,7 +108,7 @@ class XmlRpcParser
         foreach($params->children() as $param)
         {
 
-            if ($param->value->count() == 0) {
+            if ($param->value->children()->count() == 0) {
                 $return[] = (string) $param->value;
             }
 
