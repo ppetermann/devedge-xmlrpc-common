@@ -1,5 +1,6 @@
 # devedge/xmlrpc-common
 [![Latest Stable Version](https://poser.pugx.org/devedge/xmlrpc-common/v/stable.png)](https://packagist.org/packages/devedge/xmlrpc-common)
+[![License](https://poser.pugx.org/devedge/xmlrpc-common/license.png)](https://packagist.org/packages/devedge/xmlrpc-common)
 [![Total Downloads](https://poser.pugx.org/devedge/xmlrpc-common/downloads.png)](https://packagist.org/packages/devedge/xmlrpc-common)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ppetermann/devedge-xmlrpc-common/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ppetermann/devedge-xmlrpc-common/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ppetermann/devedge-xmlrpc-common/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ppetermann/devedge-xmlrpc-common/?branch=master)
